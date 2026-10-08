@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Esta línea asegura que la página se adapte a pantallas de celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas: El Lenguaje Secreto de las Emociones</title>
+    <style>
+        /* Paleta de colores y estilos generales */
+        :root {
+            --color-principal: #8a2be2; /* Un tono púrpura/violeta que evoca emoción */
+            --color-hover: #9b59b6;
+            --texto-claro: #f5f5f5;
+        }
+
+        body {
+            background-color: #050505; /* Fondo negro */
+            color: var(--texto-claro);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Estilos del encabezado */
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(180deg, #111 0%, #050505 100%);
+            width: 100%;
+            border-bottom: 2px solid var(--color-principal);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            /* Efecto de texto con gradiente para que resalte más */
+            background: -webkit-linear-gradient(45deg, #ff6b6b, #8a2be2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitulo {
+            font-size: 1.2rem;
+            color: #aaa;
+            margin-top: 10px;
+        }
+
+        /* Contenedor principal de los botones */
+        .contenedor {
+            max-width: 800px;
+            width: 90%;
+            margin: 2rem auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* Estilos de cada tarjeta/sección */
+        .tarjeta {
+            background-color: #151515;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.2);
+            border-color: var(--color-principal);
+        }
+
+        .tarjeta h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .tarjeta p {
+            color: #ccc;
+            font-size: 1rem;
+        }
+
+        /* Botones de acción */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 15px;
+            background-color: var(--color-principal);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--color-hover);
+        }
+
+        /* Reproductor de música */
+        .reproductor {
+            margin-top: 2rem;
+            background-color: #111;
+            padding: 15px 25px;
+            border-radius: 30px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+
+        /* Ajustes para pantallas de celular */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .tarjeta {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Matemáticas: El Lenguaje Secreto de las Emociones</h1>
+        <p class="subtitulo">Proyecto de Feria de Matemáticas</p>
+    </header>
+
+    <!-- Reproductor de música de fondo -->
+    <div class="reproductor">
+        <p style="margin: 0 0 10px 0; font-size: 0.9rem; color: #bbb;">Música de ambiente 🎵</p>
+        <!-- La etiqueta 'autoplay' intentará reproducir la música al abrir la página, 
+             y 'loop' hará que se repita. Se dejan los 'controls' por si el navegador bloquea el auto-play -->
+        <audio controls autoplay loop>
+            <source src="musica_fondo.mp3" type="audio/mpeg">
+            Tu navegador no soporta el reproductor de audio.
+        </audio>
+    </div>
+
+    <div class="contenedor">
+        <!-- Apartado 1: PDF del Informe -->
+        <div class="tarjeta">
+            <h2>📄 Informe de Investigación</h2>
+            <p>Descarga el documento completo para leer sobre el desarrollo teórico de nuestro proyecto.</p>
+            <!-- Asegúrate de que tu archivo pdf se llame 'informe.pdf' y esté en la misma carpeta -->
+            <a href="informe.pdf" download class="btn">Descargar PDF</a>
+        </div>
+
+        <!-- Apartado 2: Diapositivas en Prezi -->
+        <div class="tarjeta">
+            <h2>🎬 Presentación en Prezi</h2>
+            <p>Explora nuestras diapositivas interactivas utilizadas durante la exposición.</p>
+            <!-- Cambia el "#" por el link real de tu Prezi -->
+            <a href="#" target="_blank" class="btn">Ver Presentación</a>
+        </div>
+
+        <!-- Apartado 3: Aplicación de las ideas -->
+        <div class="tarjeta">
+            <h2>🚀 Aplicación Práctica</h2>
+            <p>Visita el sitio donde ponemos en acción las ideas y modelos matemáticos de las emociones.</p>
+            <!-- Cambia el "#" por el link real de tu aplicación -->
+            <a href="#" target="_blank" class="btn">Ir a la Aplicación</a>
+        </div>
+    </div>
+
+</body>
+</html>
