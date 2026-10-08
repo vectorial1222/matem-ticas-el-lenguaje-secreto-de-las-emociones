@@ -1,1 +1,0 @@
-# matem-ticas-el-lenguaje-secreto-de-las-emociones
